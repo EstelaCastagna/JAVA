@@ -1,0 +1,27 @@
+
+package par.ou.impar;
+
+import java.util.Scanner; 
+
+public class ParOuImpar {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int numero;
+        
+        System.out.print("Insira um número inteiro: ");
+        Scanner leia = new Scanner(System.in);
+        numero = leia.nextInt();
+        
+        if (numero % 2 == 0){
+            System.out.println("O número inserido é par");
+        } else {
+            System.err.println("O número inserido é impar");
+        }
+    }
+    
+}
