@@ -1,0 +1,34 @@
+package lista.alfabética;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class ListaAlfabética {
+
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+    Scanner leia = new Scanner(System.in);
+    ArrayList<String> palavras = new ArrayList<>();
+    
+    int quantidadePalavras;
+    quantidadePalavras = 0;
+    
+    System.out.println("Digite quantas palavras deseja escrever: ");
+    quantidadePalavras = leia.nextInt();
+    
+        for (int i = 0; i < quantidadePalavras; i++) {
+            System.out.println("Escreva a "+ i+1 +"º palavra: ");
+            palavras.add(leia.nextLine());
+        }
+    ArrayList<String> palavrasOrdem = new ArrayList<>();
+    Collections.sort(palavras);
+    
+        for (int i = 0; i < quantidadePalavras; i++) {
+            
+        }
+    
+    
+    }
+    
+}
