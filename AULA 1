@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package aula.pkg1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author escastagna
+ */
+public class Aula1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        //String = cadeia
+        String nome = "";
+
+        //int = inteiro
+        int numero = 0;
+
+        //real(decimal)
+        float decimal = 0.0f;
+        double decimal2 = 0.0;
+
+        //logico
+        boolean booleano = true;
+        booleano = false;
+
+        //caractere
+        char caractere = 'a';
+
+        System.out.println("Hello Word");
+        Scanner leia = new Scanner(System.in);
+
+        nome = leia.nextLine();
+
+        //.equals checa a string (==)
+        if (nome.equals("Andre")) {
+            System.out.println(nome);
+        } else {
+            //usado para declarar erro, o texto sai vermelho
+            System.err.println("Nome Inválido");
+        }
+
+    }
+
+}
